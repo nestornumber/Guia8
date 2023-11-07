@@ -1,0 +1,365 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff2d2;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+}
+
+
+/*LOGO*/
+.logo-container {
+    width: auto;
+    text-align: center;
+}
+
+.logo-up {
+    width: 40px;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+.logo-container p {
+    font-family: Righteous;
+    font-size: 20pt;
+    margin-top: 0px;
+}
+
+
+/*NAVBAR*/
+.navbar {
+    width: 100%;
+    background-color: #f2b934;
+    overflow: auto;
+    border-radius: 25px;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #ff8316;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.navbar a:active {
+    background-color: #ff6c4b;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*CONTAINER*/
+.food-container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/*ENCABEZADO DEL CUERPO*/
+/*TITULO - PLATILLOS*/
+.encabezado-container {
+    display: inline-flex;
+    width: 100%;
+}
+
+.encabezado {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/*ENCABEZADO DE SECCION*/
+.title {
+    font-family: Square Peg;
+    font-size: 40pt;
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-size: 15pt;
+    margin-top: -50px;
+}
+
+
+/*BOCADILLOS*/
+/*MENU DESPLEGABLE*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 45px;
+}
+
+.dropdown img {
+    width: 35px;
+    margin-bottom: 60px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -150px;
+    top: -40px;
+    background-color: #f2b934;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px #ffdc8b;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff8316;
+    border-radius: 25px;
+    transition: 0.5s ;
+}
+
+.dropdown-content a:active {
+    background-color: #ff6c4b;
+    transition: 0.2s;
+}
+
+
+/*CONTACTANOS*/
+
+.contactanos-container{
+    display: inline-block;
+    width: 49%;
+}
+
+.contactanos-formulario label,input, textarea {
+    display: block;
+    margin: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12pt;
+}
+
+.contactanos-formulario input {
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.contactanos-formulario textarea {
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    width: 300px;
+    min-height: 200px;
+}
+
+.botones-formulario input {
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: #f3cf7a;
+    transition: 0.5s;
+}
+
+.botones-formulario input:hover {
+    background-color: #ff8316;
+    cursor: pointer;
+}
+
+.botones-formulario input:active {
+    background-color: #ff6c4b;
+    transition: 0.2;
+}
+
+.contactanos-button-link {
+    text-decoration: none;
+    color: black;
+}
+
+.contactanos-email {
+    background-color: #f3cf7a;
+    transition: 0.5s;
+    border-radius: 25px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+
+.contactanos-email:hover {
+    background-color: #ff8316;
+}
+
+.contactanos-email:active {
+    background-color: #ff6c4b;
+    transition: 0.2;
+}
+.contactanos-email-text {
+    font-size: 15pt;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.contactanos-email-img {
+    width: 50px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contactanos-formulario input {
+        width: 250px;
+    }
+
+    .contactanos-formulario textarea {
+        width: 250px;
+    }
+
+    .botones-formulario input {
+        width: 250px;
+    }
+
+    .contactanos-email {
+        width: 250px;
+    }
+    
+}
+
+
+/*NOSOTROS*/
+
+.parrafo-nosotros {
+    font-size: 12pt;
+    width: 500px;
+    line-height: 20pt;
+}
+
+
+@media screen and (max-width: 768px) {
+    .parrafo-nosotros {
+        width: auto;
+        max-width: 500px;
+    }
+    
+}
+
+
+/*SELECCION DE PLATILLOS*/
+.food-selection {
+    display: inline-flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.food-selection a {
+    text-decoration: none;
+    color: white;
+    width: autos;
+}
+
+.food-selection img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.food-selection p {
+    font-size: 16pt;
+    margin: 20px 20px;
+}
+
+.food-square-container {
+    background-color: #ffc175;
+    height: auto;
+    width: 45%;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.food-square-container:hover {
+    background-color: #633817;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.food-square-container:active {
+    background-color: #ad4b00;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+    .food-selection {
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .food-selection div {
+        width: 100%;
+    }
+
+    .food-selection p {
+        padding-bottom: 20px;
+    }
+}
+
+
+/*FOOTER*/
+.footer {
+    width: auto;
+    margin: 50px;
+}
+
+.footer-text {
+    text-align: center;
+    color: #4a4a4a;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Botón de navegación lateral</title>
+    <style>
+        #mySidenav a {
+            position: absolute;
+            left: -120px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 130px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #mySidenav a:hover {
+            left: 0;
+        }
+
+        #about {
+            top: 20px;
+            background-color: #04AA6D;
+        }
+
+        #blog {
+            top: 80px;
+            background-color: #2196F3;
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #F44336;
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="about">Acerca</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Proyectos</a>
+        <a href="#" id="contact">Contactanos</a>
+    </div>
+    <div style="margin-left:80px;">
+        <h2>Botones de navegación lateral que se pueden desplazar</h2>
+        <p>Pase el cursor sobre los botones en la navegación del lado 
+        izquierdo para abrirlos.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" href="./src/branding/logo-cuchara-tenedor.svg">
+
+    <!--FONTS-->
+    <!--Righteous-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!--Square Peg-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--LOGO-->
+    <div class="logo-container">
+        <a href="./index.html">
+            <img class="logo-up" src="./src/branding/logo-cuchara-tenedor.svg" alt="Logo">
+            <p>Restaurant</p>
+        </a>
+    </div>
+
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <a href="./index.html">Inicio</a>
+        <a href="./postres.html">Postres</a>
+        <a href="./bocadillos.html">Bocadillos</a>
+        <a href="./contactanos.html">Contáctanos</a>
+        <a href="./nosotros.html">Nosotros</a>
+    </div>
+
+
+    <!--COMIDA-->
+    <div class="food-container">
+        
+        <!--CONTACTANOS-->
+        <div class="contactanos-container">
+            <div class="encabezado">
+                <h2 class="title">Contáctanos</h2>
+                <p class="subtitle">Escribe algo que nos quieras decir</p>
+            </div>
+
+            <form action="https://www.itca.edu.sv/" method="get">
+                <div class="contactanos-formulario">
+                    <label for="nombre">Nombre y Apellido: </label>
+                    <input type="text" name="nombre-y-apellido" placeholder="Néstor Rodríguez">
+                    <label for="telefono">Número de teléfono: </label>
+                    <input type="tel" name="numero-de-telefono" placeholder="+503 1234 5678">
+                    <label for="texto">Escribe lo que nos quieres decir:</label>
+                    <textarea name="texto"></textarea>
+                </div>
+                <div class="botones-formulario">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar todo">
+                </div>
+            </form>
+            <div class="encabezado">
+                <a class="contactanos-button-link" href="mailto:nestor.rodriguez22@itca.edu.sv">
+                    <div class="contactanos-email">
+                        <p class="contactanos-email-text">¿Prefieres correo electrónico?</p>
+                        <img class="contactanos-email-img" src="./src/svg/email.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+            
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <p class="footer-text">Néstor Rodríguez &copy; 2022</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
